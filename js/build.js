@@ -32,11 +32,11 @@ function unityShowBanner(msg, type) {
 }
 
 var buildUrl = "Build";
-var loaderUrl = buildUrl + "/HEJ.loader.js";
+var loaderUrl = buildUrl + "/bjork.loader.js";
 var config = {
-  dataUrl: buildUrl + "/HEJ.data.unityweb",
-  frameworkUrl: buildUrl + "/HEJ.framework.js.unityweb",
-  codeUrl: buildUrl + "/HEJ.wasm.unityweb",
+  dataUrl: buildUrl + "/bjork.data.unityweb",
+  frameworkUrl: buildUrl + "/bjork.framework.js.unityweb",
+  codeUrl: buildUrl + "/bjork.wasm.unityweb",
   streamingAssetsUrl: "StreamingAssets",
   companyName: "DefaultCompany",
   productName: "BF1",
