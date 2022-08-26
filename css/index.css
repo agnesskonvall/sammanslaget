@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Stone Sans;
+  background-color: #fcfcfc;
+}
+@font-face {
+  font-family: Stone Sans;
+  src: url(/assets/fonts/Stone\ Sans\ Bold.ttf);
+}
+#navbar {
+  padding-top: 1.5rem;
+}
+nav {
+  padding-bottom: 10rem;
+}
+#navbar ul {
+  margin: 0;
+  padding: 5px;
+  list-style-type: none;
+  text-align: left;
+}
+
+#navbar ul li {
+  display: inline;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  padding: 0.2em 1em;
+  color: #000;
+}
+#navbar ul li img {
+  width: 20rem;
+  height: auto;
+}
+
+#navbar ul li a:hover {
+  text-decoration: solid;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+  padding-top: 38rem;
+}
+.mainimg {
+  align-self: center;
+  width: 30vw;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 20rem);
+  grid-template-rows: repeat(3, 20rem);
+  grid-gap: 50px 30px;
+}
+
+.grid-item {
+  border: thin gray solid;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.button {
+  width: 3rem;
+  height: auto;
+  align-self: inline-block;
+  position: absolute;
+  cursor: pointer;
+  right: -80rem;
+  top: -23rem;
+}
+
+.button-container {
+  width: 3rem;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+
+a {
+  color: blue;
+}
+a:active {
+  text-decoration: none;
+  color: blue;
+}
+
+.info-text {
+  max-width: 50rem;
+}
+/* the game */
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+  margin-top: 2rem;
+  background-color: black;
+  width: 1000px;
+  height: 600px;
+}
+.mobile-container {
+  display: none;
+}
+/* mobile  */
+@media only screen and (max-width: 480px) {
+  .game-container {
+    display: none;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 20rem);
+    grid-template-rows: repeat(1, 20rem);
+    grid-gap: 50px 30px;
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 760px) {
+}
